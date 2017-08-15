@@ -1,0 +1,22 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# nvm
+export NVM_DIR=~/.nvm
+  . $(brew --prefix nvm)/nvm.sh
+
+# Source
+source $ZSH/oh-my-zsh.sh
+source /usr/local/opt/nvm/nvm.sh
+source $HOME/.bash_aliases
+source $HOME/.bash_functions
+source $HOME/.bash.local # For local settings
+
+# Theme (themes can be found in ~/.oh-my-zsh/themes/*)
+ZSH_THEME="ys"
+
+# Plugins (plugins can be found in ~/.oh-my-zsh/plugins/*)
+plugins=(git docker vagrant fabric)
+
+# Clear system messages
+clear

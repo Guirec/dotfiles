@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# Easier navigation
+# ====================================================
+
+alias ..="cd ../"                # Go back 1 directory level
+alias ...="cd ../../"            # Go back 2 directory levels
+alias .3="cd ../../../"          # Go back 3 directory levels
+alias .4="cd ../../../../"       # Go back 4 directory levels
+alias .5="cd ../../../../../"    # Go back 5 directory levels
+alias .6="cd ../../../../../../" # Go back 6 directory levels
+alias ~="cd ~"                   # ~: Go Home
+alias o="open ."                 # o: Open in Finder
+alias c="clear"                  # c: Clear terminal display
+
+# Easier manipulations
+# ====================================================
+
+alias mkdir="mkdir -p"
+
+# Directories
+# ====================================================
+
+alias dl="cd ~/Downloads/"
+alias desk="cd ~/Desktop/"
+alias docs="cd ~/Documents/"
+alias proj="cd ~/Projects/"
+
+# Development
+# ====================================================
+
+# Docker
+alias d="docker"
+
+# Vagrant
+alias v="vagrant"
+
+# Git
+alias master="git checkout master"
+alias develop="git checkout develop"
+alias pull="git pull"
+alias push="git push"
+alias resetlast="git reset --soft HEAD~1"
+alias gitclean="git remote prune origin"
+alias gitcleanlocal="git branch --merged | grep -v '\*' | grep -v 'master' | grep -v 'develop' | xargs -n 1 git branch -d"
+
+# npm
+alias npmlistg="npm list -g --depth=0"
+alias npmr="npm run"
+
+# Finder
+# ====================================================
+
+# Show hidden files
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+# Hide hidden files
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# Recursively delete `.DS_Store` files from the current dir
+alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
+# Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
+# Clean Open With context menu
+alias fixow="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
+
+# System
+# ====================================================
+
+# Get macOS Software Updates, update Homebrew and their installed packages
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine.
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"

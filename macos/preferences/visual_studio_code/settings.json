@@ -1,0 +1,23 @@
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 4,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.selectionHighlight": false,
+  "editor.minimap.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "explorer.openEditors.visible": 0,
+  "css.lint.duplicateProperties": "warning",
+  "css.lint.zeroUnits": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.zeroUnits": "warning",
+  "less.lint.duplicateProperties": "warning",
+  "less.lint.zeroUnits": "warning",
+  "html.format.indentInnerHtml": true,
+  "extensions.autoUpdate": true,
+  "workbench.activityBar.visible": true,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vs-seti",
+  "window.zoomLevel": 0
+}

@@ -1,0 +1,12 @@
+# System
+.DS_Store
+
+# Ignore directory
+ignore
+
+# npm
+node_modules
+npm-debug.log
+
+# IDEs stuff
+.idea
