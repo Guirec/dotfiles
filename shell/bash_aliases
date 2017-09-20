@@ -29,6 +29,9 @@ alias proj="cd ~/Projects/"
 # Development
 # ====================================================
 
+# Make
+alias m="make"
+
 # Docker
 alias d="docker"
 
