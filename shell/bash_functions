@@ -11,6 +11,27 @@ function trash() { command mv "$@" ~/.Trash ; } # trash: Moves a file to the mac
 
 function gpp() { git pull && git push; }        # gpp:   Git pull & push
 
+# Docker
+# ====================================================
+
+function restore-volume() {
+    tarName=$2
+    if [[ "$2" = "" ]]
+    then
+        tarName=$1
+    fi
+    docker run --rm -ti -v $1:/data -v `pwd`:/host debian bash -c "cd /data; tar xvzf /host/$tarName.tgz"
+}
+
+function dump-volume() {
+    tarName=$2
+    if [[ "$2" = "" ]]
+    then
+        tarName=$1
+    fi
+    docker run --rm -ti -v $1:/data -v `pwd`:/host debian bash -c "cd /data; tar cvzf /host/$tarName.tgz *"
+}
+
 # Extract archives - use: extract <file>
 # ====================================================
 
