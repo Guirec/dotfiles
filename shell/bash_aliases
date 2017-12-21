@@ -51,6 +51,7 @@ alias gitcleanlocal="git branch --merged | grep -v '\*' | grep -v 'master' | gre
 # npm
 alias npmlistg="npm list -g --depth=0"
 alias npmr="npm run"
+alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
 
 # Finder
 # ====================================================
