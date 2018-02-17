@@ -16,7 +16,7 @@ source $HOME/.bash.local # For local settings
 ZSH_THEME="ys"
 
 # Plugins (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git docker vagrant fabric)
+plugins=(git docker)
 
 # Clear system messages
 clear
