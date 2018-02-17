@@ -83,3 +83,11 @@ function localip() {
         sed -r "s/Ethernet Address:/📘 /g" | \
         sed -r "s/(VLAN Configurations)|==*//g"
 }
+
+function trustssl () {
+    echo "Please fill the domain: (example: website.com)"
+    read hostname
+    openssl s_client -connect $hostname:443 -showcerts -prexit < /dev/null > /tmp/certificate.cer
+    sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /tmp/certificate.cer
+}
+export trustssl
