@@ -57,12 +57,39 @@ is_tweetbot_installed() {
 
 # ---------------------------------------------------------------------
 
+install_paste() {
+
+    # If necessary, prompt user to install `Paste`.
+
+    if ! is_paste_installed; then
+        open "macappstores://itunes.apple.com/en/app/paste-clipboard-history-manager/id967805235"
+    fi
+
+    # -----------------------------------------------------------------
+
+    # Wait until `Paste` is installed.
+
+    execute \
+        "until is_paste_installed; do \
+            sleep 5; \
+         done" \
+        "Paste.app"
+
+}
+
+is_paste_installed() {
+    [ -d "/Applications/Paste.app" ]
+}
+
+# ---------------------------------------------------------------------
+
 main() {
 
     print_in_purple "\n   App Store\n"
 
     install_reeder
     install_tweetbot
+    install_paste
 
 }
 
