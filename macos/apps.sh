@@ -13,5 +13,5 @@ print_in_purple "\n • Installs\n"
 ./apps/coding.sh
 ./apps/design.sh
 ./apps/work.sh
-./apps/misc.sh
+./apps/miscellaneous.sh
 ./apps/appstore.sh
