@@ -65,7 +65,7 @@ alias fixow="/System/Library/Frameworks/CoreServices.framework/Versions/A/Framew
 # ====================================================
 
 # Get macOS Software Updates, update Homebrew and their installed packages
-alias update="sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup"
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup"
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
