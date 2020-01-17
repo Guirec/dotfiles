@@ -8,5 +8,8 @@ ignore
 node_modules
 npm-debug.log
 
+yarn_node_modules
+npm_node_modules
+
 # IDEs stuff
 .idea
