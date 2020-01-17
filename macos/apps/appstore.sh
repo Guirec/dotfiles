@@ -5,27 +5,27 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # ---------------------------------------------------------------------
 
-install_reeder() {
+install_spark() {
 
-    # If necessary, prompt user to install `Reeder`.
+    # If necessary, prompt user to install `Spark`.
 
-    if ! is_reeder_installed; then
-        open "macappstores://itunes.apple.com/en/app/reeder-3/id880001334"
+    if ! is_spark_installed; then
+        open "macappstores://itunes.apple.com/en/app/id1176895641"
     fi
 
     # -----------------------------------------------------------------
 
-    # Wait until `Reeder` is installed.
+    # Wait until `Spark` is installed.
 
     execute \
-        "until is_reeder_installed; do \
+        "until is_spark_installed; do \
             sleep 5; \
          done" \
         "Reeder.app"
 
 }
 
-is_reeder_installed() {
+is_spark_installed() {
     [ -d "/Applications/Reeder.app" ]
 }
 
@@ -36,7 +36,7 @@ install_tweetbot() {
     # If necessary, prompt user to install `Tweetbot`.
 
     if ! is_tweetbot_installed; then
-        open "macappstores://itunes.apple.com/en/app/tweetbot-for-twitter/id557168941"
+        open "macappstores://itunes.apple.com/en/app/id1384080005"
     fi
 
     # -----------------------------------------------------------------
@@ -62,7 +62,7 @@ install_paste() {
     # If necessary, prompt user to install `Paste`.
 
     if ! is_paste_installed; then
-        open "macappstores://itunes.apple.com/en/app/paste-clipboard-history-manager/id967805235"
+        open "macappstores://itunes.apple.com/en/app/id967805235"
     fi
 
     # -----------------------------------------------------------------
@@ -87,7 +87,7 @@ main() {
 
     print_in_purple "\n   App Store\n"
 
-    install_reeder
+    install_spark
     install_tweetbot
     install_paste
 

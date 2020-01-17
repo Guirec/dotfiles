@@ -11,3 +11,4 @@ print_in_purple "\n   Browsers\n"
 
 brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
 brew_install "Firefox" "firefox" "caskroom/cask" "cask"
+brew_install "Firefox Developer Edition" "firefox-developer-edition" "caskroom/cask" "cask"
