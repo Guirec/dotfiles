@@ -12,6 +12,7 @@ alias .6="cd ../../../../../../" # Go back 6 directory levels
 alias ~="cd ~"                   # ~: Go Home
 alias o="open ."                 # o: Open in Finder
 alias c="clear"                  # c: Clear terminal display
+alias list="ls -lAh"             # list: detailed files and folders list
 
 # Easier manipulations
 # ====================================================
