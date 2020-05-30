@@ -444,3 +444,31 @@ brew_upgrade() {
         "Homebrew (upgrade)"
 
 }
+
+#
+# mas-cli
+# =====================================================================
+
+mas_install() {
+
+    declare -r IDENTIFIER="$2"
+    declare -r IDENTIFIER_READABLE_NAME="$1"
+
+    # -----------------------------------------------------------------
+
+    # Check if `mas-cli` is installed.
+
+    if ! cmd_exists "mas"; then
+        print_error "$IDENTIFIER_READABLE_NAME ('mas-cli' is not installed)"
+        return 1
+    fi
+
+    # -----------------------------------------------------------------
+
+    # Install the specified identifier.
+
+    execute \
+        "mas install $IDENTIFIER" \
+        "$IDENTIFIER_READABLE_NAME"
+
+}
