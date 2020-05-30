@@ -21,12 +21,12 @@ install_spark() {
         "until is_spark_installed; do \
             sleep 5; \
          done" \
-        "Reeder.app"
+        "Spark.app"
 
 }
 
 is_spark_installed() {
-    [ -d "/Applications/Reeder.app" ]
+    [ -d "/Applications/Spark.app" ]
 }
 
 # ---------------------------------------------------------------------
