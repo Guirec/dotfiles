@@ -9,7 +9,6 @@ print_in_purple "\n   Coding tools\n\n"
 
 # ---------------------------------------------------------------------
 
-brew_install "Dash" "dash" "caskroom/cask" "cask"
 brew_install "Docker Edge" "docker-edge" "caskroom/versions" "cask"
 brew_install "Sequel Pro" "sequel-pro" "caskroom/cask" "cask"
 brew_install "Sublime Merge" "sublime-merge" "caskroom/cask" "cask"

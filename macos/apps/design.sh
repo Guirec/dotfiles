@@ -9,7 +9,6 @@ print_in_purple "\n   Design tools\n\n"
 
 # ---------------------------------------------------------------------
 
-brew_install "Adobe Creative Cloud" "adobe-creative-cloud" "caskroom/cask" "cask"
 brew_install "Figma" "figma" "caskroom/cask" "cask"
 brew_install "ImageOptim" "imageoptim" "caskroom/cask" "cask"
 brew_install "Sip" "sip" "caskroom/cask" "cask"
