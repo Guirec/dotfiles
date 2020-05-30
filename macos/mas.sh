@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 signin_mac_app_store() {
 
-	appleId=""
+    appleId=""
     while [ -z "$appleId" ]; do
         ask "Please specify your Apple ID: "
         appleId="$(get_answer)"
