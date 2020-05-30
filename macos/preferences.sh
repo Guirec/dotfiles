@@ -19,7 +19,6 @@ print_in_purple "\n • Preferences\n"
 
 ./preferences/app_store.sh
 ./preferences/chrome.sh
-./preferences/dashboard.sh
 ./preferences/dock.sh
 ./preferences/finder.sh
 ./preferences/photos.sh
