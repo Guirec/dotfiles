@@ -8,8 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 create_directories() {
 
     declare -a DIRECTORIES=(
-        "$HOME/projects/personal"
-        "$HOME/projects/work"
+        "$HOME/Projects/Personal"
+        "$HOME/Projects/Work"
     )
 
     for i in "${DIRECTORIES[@]}"; do
