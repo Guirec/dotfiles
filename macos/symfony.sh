@@ -8,11 +8,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 install_symfony_cli() {
 
     if ! cmd_exists "symfony"; then
-        printf "\n" | ruby -e "$(curl -sS https://get.symfony.com/cli/installer | bash)" &> /dev/null
-        #  └─ simulate the ENTER keypress
+        execute \
+            "curl -sS https://get.symfony.com/cli/installer | bash" \
+            "Symfony CLI"
     fi
-
-    print_result $? "Symfony CLI"
 
 }
 
