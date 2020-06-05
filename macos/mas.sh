@@ -7,17 +7,16 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 signin_mac_app_store() {
 
-    appleId=""
-    while [ -z "$appleId" ]; do
-        ask "Please specify your Apple ID: "
-        appleId="$(get_answer)"
-    done
+    print_warning "Please make sure to be signed to the Mac App Store"
 
-    printf "\n"
+    open "macappstores://itunes.apple.com/en/app/xcode/id497799835"
 
-    execute \
-        "mas signin $appleId" \
-        "Signin to the Mac App Store"
+    ask_for_confirmation "Are you now signed to the Mac App Store?"
+
+    if ! answer_is_yes; then
+        print_error "You need to be signed to the Mac App Store to continue"
+        exit 1
+    fi
 
 }
 
