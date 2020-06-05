@@ -13,7 +13,7 @@ The setup process will:
 
 * Download the dotfiles on your computer (by default it will suggest
   `~/Projects/Personal/dotfiles`)
-* Install [Xcode and Xcode Command Line Tools](macos/xcode.sh), [Homebrew](macos/homebrew.sh), [Git](macos/git.sh), [Zsh and Oh My Zsh](macos/zsh.sh)
+* Install [Xcode Command Line Tools](macos/xcode-clt.sh), [Homebrew](macos/homebrew.sh), [mas-cli](macos/mas.sh), [Git](macos/git.sh), [Zsh and Starship](macos/zsh.sh)
 * Create some additional [directories](macos/create_directories.sh)
 * [Symlink](macos/create_symbolic_links.sh) the
   [`git`](git), and
