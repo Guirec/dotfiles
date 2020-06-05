@@ -7,6 +7,14 @@ declare -r SHELL_CONFIG_FILE="$HOME/.zshrc"
 
 # ---------------------------------------------------------------------
 
+create_nvm_directory() {
+
+    execute \
+        "mkdir ~/.config/nvm" \
+        "Create nvm directory"
+
+}
+
 install_latest_stable_node() {
 
     # Install the latest stable version of Node
@@ -16,6 +24,7 @@ install_latest_stable_node() {
         ". $SHELL_CONFIG_FILE \
             && nvm install node" \
         "nvm (install latest Node)"
+
 }
 
 # ---------------------------------------------------------------------
@@ -26,6 +35,7 @@ main() {
 
     brew_install "nvm (install)" "nvm"
 
+    create_nvm_directory
     install_latest_stable_node
 
 }
