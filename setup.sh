@@ -229,7 +229,7 @@ main() {
 
     ./macos/fonts.sh
 
-    # Install Zsh and Oh My Zsh
+    # Install Zsh and Starship
     # -----------------------------------------------------------------
 
     ./macos/zsh.sh

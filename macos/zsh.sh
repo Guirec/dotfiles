@@ -10,7 +10,7 @@ main() {
     print_in_purple "\n • Oh My Zsh\n\n"
 
     brew_install "Zsh" "zsh"
-    brew_install "Antigen" "antigen"
+    brew_install "Starship" "starship"
 
 }
 

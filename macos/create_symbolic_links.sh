@@ -11,7 +11,6 @@ create_symlinks() {
 
         "shell/bash_aliases"
         "shell/bash_functions"
-        "shell/p10k.zsh"
         "shell/zshrc"
 
         "git/gitconfig"

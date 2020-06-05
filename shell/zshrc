@@ -1,32 +1,11 @@
-# Exports
-export NVM_DIR="$HOME/.nvm"
-export DOCKER_SYNC=1
-export PATH="/usr/local/sbin:$PATH"
-if [[ -d ~/bin ]]; then
-    export PATH=~/bin:$PATH
-fi
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+# Starship
+eval "$(starship init zsh)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# Exports
+export NVM_DIR="$HOME/.config/nvm"
 
 # Source
-source /usr/local/share/antigen/antigen.zsh
 source /usr/local/opt/nvm/nvm.sh
 source $HOME/.bash_aliases
 source $HOME/.bash_functions
 source $HOME/.bash.local # For local settings
-
-# Load the oh-my-zsh's library
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle docker
-
-# Load the theme
-antigen theme romkatv/powerlevel10k
-
-# Tell Antigen that you're done
-antigen apply
