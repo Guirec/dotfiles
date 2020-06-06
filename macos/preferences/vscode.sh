@@ -31,7 +31,6 @@ install_vscode_extensions() {
         "ms-azuretools.vscode-docker"
         "ms-vsliveshare.vsliveshare"
         "nicoespeon.abracadabra"
-        "octref.vetur"
         "ricard.postcss"
         "stylelint.vscode-stylelint"
         "sysoev.language-stylus"

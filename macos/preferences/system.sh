@@ -5,9 +5,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # ---------------------------------------------------------------------
 
-declare -r COMPUTERNAME="Guirec\'s computer"
-declare -r HOSTNAME="guirec-dev"
-declare -r LOCALHOSTNAME="guirec-dev"
+declare -r COMPUTERNAME="Guirec"
+declare -r HOSTNAME="guirec"
+declare -r LOCALHOSTNAME="guirec"
 
 # ---------------------------------------------------------------------
 
@@ -61,6 +61,9 @@ execute "defaults write -g PMPrintingExpandedStateForPrint -bool true" \
 
 execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false" \
     "Disable resume system-wide"
+
+execute "sudo defaults write -g com.apple.swipescrolldirection -bool false" \
+    "Disable 'natural' scroll direction"
 
 execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME && \
          sudo scutil --set ComputerName $COMPUTERNAME && \
