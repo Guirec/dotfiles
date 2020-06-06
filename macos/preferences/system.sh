@@ -5,9 +5,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # ---------------------------------------------------------------------
 
-declare -r COMPUTERNAME="Ordinateur de Guirec"
-declare -r HOSTNAME="dev"
-declare -r LOCALHOSTNAME="dev"
+declare -r COMPUTERNAME="Guirec\'s computer"
+declare -r HOSTNAME="guirec-dev"
+declare -r LOCALHOSTNAME="guirec-dev"
 
 # ---------------------------------------------------------------------
 
