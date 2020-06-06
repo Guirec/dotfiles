@@ -26,3 +26,4 @@ print_in_purple "\n • Preferences\n"
 ./preferences/system.sh
 ./preferences/terminal.sh
 ./preferences/textedit.sh
+./preferences/vscode.sh

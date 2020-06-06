@@ -1,7 +1,0 @@
-Beautify
-Bracket Pair Colorizer
-Dash
-EditorConfig for VS Code
-One Dark Pro
-Sort lines
-Twig
