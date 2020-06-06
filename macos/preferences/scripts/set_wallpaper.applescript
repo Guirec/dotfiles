@@ -2,6 +2,6 @@
 
 tell application "System Events"
     tell every desktop
-        set picture to "~/projects/personal/dotfiles/macos/wallpapers/black.jpg"
+        set picture to "~/Projects/Personal/dotfiles/macos/wallpapers/black.jpg"
     end tell
 end tell
