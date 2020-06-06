@@ -11,5 +11,4 @@ print_in_purple "\n   Design tools\n\n"
 
 brew_install "Figma" "figma" "homebrew/cask" "cask"
 brew_install "ImageOptim" "imageoptim" "homebrew/cask" "cask"
-brew_install "Sip" "sip" "homebrew/cask" "cask"
 brew_install "Sketch" "sketch" "homebrew/cask" "cask"
