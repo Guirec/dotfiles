@@ -10,7 +10,7 @@ declare -r SHELL_CONFIG_FILE="$HOME/.zshrc"
 create_nvm_directory() {
 
     execute \
-        "mkdir ~/.config/nvm" \
+        "mkdir -p ~/.config/nvm" \
         "Create nvm directory"
 
 }
