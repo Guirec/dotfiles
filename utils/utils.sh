@@ -352,21 +352,6 @@ show_spinner() {
 # Brew
 # =====================================================================
 
-brew_cleanup() {
-
-    # By default Homebrew does not uninstall older versions of formulas
-    # so, in order to remove them, `brew cleanup` needs to be used.
-
-    execute \
-        "brew cleanup" \
-        "Homebrew (cleanup)"
-
-    execute \
-        "brew cask cleanup" \
-        "Homebrew (cask cleanup)"
-
-}
-
 brew_install() {
 
     declare -r CMD="$4"
