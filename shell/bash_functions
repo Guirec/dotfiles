@@ -43,7 +43,7 @@ function extract() {
         local didfolderexist=false
         if [ -d "$foldername" ]; then
             didfolderexist=true
-            read -p "$foldername already exists, do you want to overwrite it? (y/n) " -n 1
+            read -p "$foldername already exists, do you want to overwrite it? (y/n) "
             echo
             if [[ $REPLY =~ ^[Nn]$ ]]; then
                 return
