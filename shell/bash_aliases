@@ -36,9 +36,6 @@ alias m="make"
 # Docker
 alias d="docker"
 
-# Vagrant
-alias v="vagrant"
-
 # Git
 alias gitclean="git remote prune origin"
 alias gitcleanlocal="git branch --merged | grep -v '\*' | grep -v 'master' | grep -v 'develop' | xargs -n 1 git branch -d"
