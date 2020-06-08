@@ -37,6 +37,7 @@ alias m="make"
 alias d="docker"
 
 # Git
+alias lg="lazygit"
 alias gitclean="git remote prune origin"
 alias gitcleanlocal="git branch --merged | grep -v '\*' | grep -v 'master' | grep -v 'develop' | xargs -n 1 git branch -d"
 
