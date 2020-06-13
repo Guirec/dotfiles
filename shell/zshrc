@@ -5,6 +5,7 @@ eval "$(starship init zsh)"
 export NVM_DIR="$HOME/.config/nvm"
 
 # Source
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/opt/nvm/nvm.sh
 source $HOME/.bash_aliases
 source $HOME/.bash_functions
