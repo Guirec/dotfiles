@@ -25,13 +25,19 @@ execute "defaults write com.apple.dock persistent-apps -array && \
          defaults write com.apple.dock persistent-others -array " \
     "Wipe all app icons"
 
-execute "defaults write com.apple.dock show-process-indicators -bool true" \
-    "Show indicator for open applications"
+execute "defaults write com.apple.dock show-process-indicators -bool false" \
+    "Do not show indicator for open applications"
+
+execute "defaults write com.apple.dock launchanim -bool false" \
+    "Do not animate opening applications from the Dock"
 
 execute "defaults write com.apple.dock showhidden -bool true" \
     "Make icons of hidden applications translucent"
 
 execute "defaults write com.apple.dock tilesize -int 20" \
     "Set icon size"
+
+execute "defaults write com.apple.dock autohide -bool true" \
+    "Autohide the Dock"
 
 killall "Dock" &> /dev/null
