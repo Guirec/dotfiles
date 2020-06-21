@@ -14,6 +14,8 @@ install_symfony_cli() {
             "Symfony CLI"
     fi
 
+    brew_install "nss" "nss"
+
 }
 
 # ---------------------------------------------------------------------
