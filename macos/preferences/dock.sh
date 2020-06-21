@@ -15,9 +15,6 @@ execute "defaults write com.apple.dock enable-spring-load-actions-on-all-items -
 execute "defaults write com.apple.dock expose-group-by-app -bool false" \
     "Do not group windows by application in Mission Control"
 
-execute "defaults write com.apple.dock minimize-to-application -bool true" \
-    "Reduce clutter by minimizing windows into their application icons"
-
 execute "defaults write com.apple.dock mru-spaces -bool false" \
     "Do not automatically rearrange spaces based on most recent use"
 
