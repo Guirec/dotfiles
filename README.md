@@ -5,7 +5,7 @@ This is a collection of dotfiles and scripts I use for customizing my Mac to my 
 
 To set up the `dotfiles` just run this snippet in the terminal:
 ```
-bash -c "$(curl -LsS https://raw.github.com/guirec/dotfiles/master/setup.sh)"
+curl -sS https://raw.github.com/guirec/dotfiles/master/setup.sh | bash
 ```
 (**DO NOT** run the `setup` snippet if you don't fully understand [what it does](setup.sh).)
 
