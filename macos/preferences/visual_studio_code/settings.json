@@ -16,7 +16,6 @@
 
     // Workbench
     "workbench.startupEditor": "none",
-    "workbench.statusBar.feedback.visible": false,
 
     // Exclude
     "files.exclude": {
