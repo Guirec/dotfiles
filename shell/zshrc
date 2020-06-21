@@ -1,5 +1,14 @@
-# Starship
-eval "$(starship init zsh)"
+# Basic auto/tab complete
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zmodload zsh/complist
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
+_comp_options+=(globdots) # Include hidden files
 
 # Exports
 export NVM_DIR="$HOME/.config/nvm"
@@ -10,3 +19,6 @@ source /usr/local/opt/nvm/nvm.sh
 source $HOME/.bash_aliases
 source $HOME/.bash_functions
 source $HOME/.bash.local # For local settings
+
+# Starship
+eval "$(starship init zsh)"
