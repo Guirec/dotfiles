@@ -1,0 +1,8 @@
+# Ignore directory
+gitignore
+
+# npm
+npm-debug.log
+
+# IDEs stuff
+.idea
