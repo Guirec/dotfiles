@@ -1,0 +1,2 @@
+[preview]
+preview_cmd = "bat --force-colorization --line-range 0:1000 {}"
