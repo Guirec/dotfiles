@@ -1,3 +1,26 @@
+[core]
+    excludesfile = ~/.config/git/ignore
+
+[user]
+    name = Guirec Lefort
+    email = bonjour@guirec.dev
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDsSwU3VUwkhHOKnnQONmjhvr3wM1isJrBzpLwbO/HQg
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+    gpgsign = true
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = current
+
 [alias]
     # The basic aliases
     s = status
@@ -46,24 +69,3 @@
     # Clean
     rpo = remote prune origin
     cleanlocal = !git branch --merged | egrep -v \"(^\\*|master|main|dev)\" | xargs git branch -d
-
-[core]
-    excludesfile = ~/.config/git/ignore
-    filemode = false
-
-[user]
-    # Don't guess the user's identity.
-    # https://github.com/git/git/blob/90f7b16b3adc78d4bbabbd426fb69aa78c714f71/Documentation/config.txt#L2847-L2855
-    useConfigOnly = true
-    name = Guirec Lefort
-    email = g.lefort@monsieurbiz.com
-    signingkey = B115DE53CAB1C94D
-
-[commit]
-    gpgsign = true
-
-[init]
-    defaultBranch = main
-
-[push]
-    default = current
