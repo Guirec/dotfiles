@@ -1,0 +1,33 @@
+import = ["/Users/guirec/.config/alacritty/theme/catppuccin-mocha.toml"]
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[window]
+# Spread additional padding evenly around the terminal content.
+dynamic_padding = true
+
+# Window dimensions in character columns and lines
+# (changes require restart)
+[window.dimensions]
+columns = 160
+lines = 48
+
+# Adds this many blank pixels of padding around the window
+# Units are physical pixels; this is not DPI aware.
+# (change requires restart)
+[window.padding]
+x = 10
+y = 5
