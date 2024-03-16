@@ -1,47 +1,53 @@
-# Guirec Lefort's Dotfiles
-This is a collection of dotfiles and scripts I use for customizing my Mac to my liking and setting up the software I use on a day-to-day basis.
+# Guirec Lefort's dotfiles
 
-## Setup
+This repository contains all my dotfiles, managed by [chezmoi](https://github.com/twpayne/chezmoi).
 
-To set up the `dotfiles` just run this snippet in the terminal:
-```
-curl -sS https://raw.github.com/guirec/dotfiles/master/setup.sh | bash
-```
-(**DO NOT** run the `setup` snippet if you don't fully understand [what it does](setup.sh).)
+## Software I use
 
-The setup process will:
+### Multiplatform
 
-* Download the dotfiles on your computer (by default it will suggest
-  `~/Projects/Personal/dotfiles`)
-* Install [Xcode Command Line Tools](macos/xcode-clt.sh), [Homebrew](macos/homebrew.sh), [mas-cli](macos/mas.sh), [Git](macos/git.sh), [Zsh and Starship](macos/zsh.sh)
-* Create some additional [directories](macos/create_directories.sh)
-* [Symlink](macos/create_symbolic_links.sh) the
-  [`git`](git), and
-  [`shell`](shell) files
-* Create some [local configuration files](macos/create_local_config_files.sh)
-* Install [nvm and the latest Node version](macos/nvm.sh)
-* Install [some applications](macos/apps.sh)
-* Set custom [macOS preferences](macos/preferences.sh)
+- [1Password](https://1password.com/)
+- [Alacritty](https://alacritty.org/)
+- [Firefox](https://mozilla.org/firefox)
+- [HandBrake](https://handbrake.fr/)
+- [Heynote](https://heynote.com/)
+- [Notion](https://www.notion.so/)
+- [ONLYOFFICE](https://www.onlyoffice.com/)
+- [Polypane](https://polypane.app/)
 
-## Local Settings
+### Command line
 
-The `dotfiles` can be easily extended to suit additional local requirements by using the following files:
+- [bat](https://github.com/sharkdp/bat)
+- [eza](https://github.com/eza-community/eza)
+- [fish shell](https://fishshell.com/)
+- [fzf](https://github.com/junegunn/fzf)
+- [GitHub CLI](https://cli.github.com/)
+- [Helix](https://helix-editor.com/)
+- [Kirby CLI](https://github.com/getkirby/cli)
+- [Lazygit](https://github.com/jesseduffield/lazygit)
+- [projectable](https://github.com/dzfrias/projectable)
+- [Starship](https://starship.rs/)
+- [Zellij](https://zellij.dev/)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 
-### `~/.bash.local`
+### MacOS
 
-The `~/.bash.local` file it will be automatically sourced after all the other [`bash` related files](shell), thus, allowing its content to add to or overwrite the existing aliases, settings, PATH, etc.
+- [CleanMyMac X](https://setapp.com/apps/cleanmymac)
+- [CleanShot X](https://setapp.com/apps/cleanshot)
+- [Dash](https://setapp.com/apps/dash)
+- [DBngin](https://dbngin.com/)
+- [Herd](https://herd.laravel.com/)
+- [ImageOptim](https://imageoptim.com/)
+- [Ivory](https://tapbots.com/ivory/)
+- [MiniSim](https://www.minisim.app/)
+- [Numi](https://setapp.com/apps/numi)
+- [Paste](https://setapp.com/apps/paste)
+- [PixelSnap](https://setapp.com/apps/pixelsnap)
+- [Sketch](https://www.sketch.com/)
+- [TablePlus](https://setapp.com/apps/tableplus)
+- [Transmit](https://www.panic.com/transmit/)
+- [Zed](https://zed.dev/)
 
-### `~/.gitconfig.local`
+### Linux
 
-The `~/.gitconfig.local` file it will be automatically included after the configurations from `~/.gitconfig`, thus, allowing its content to overwrite or add to the existing `git` configurations.
-
-__Note:__ Use `~/.gitconfig.local` to store sensitive information such as the `git` user credentials.
-
-## Wallpapers
-
-* `black.jpg` wallpaper is from the [BLACK series by Jean-Marc Denis](http://jmd.im/black).
-* `fleaps.jpg` wallpaper was made by [Fabian Albert](https://thetimeloop.deviantart.com) but it's no longer in his gallery.
-
-## Forks
-
-If you decide to fork this project, don't forget to substitute my username with your own in the [`setup` snippets](#setup), [in the `setup` script](https://github.com/Guirec/dotfiles/blob/6555b6c5932c487ece960ec661ff195ee60c4200/setup.sh#L6), and in [the `system` script](https://github.com/Guirec/dotfiles/blob/6555b6c5932c487ece960ec661ff195ee60c4200/macos/preferences/system.sh#L8).
+- [Meld](https://meldmerge.org/)
