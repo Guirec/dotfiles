@@ -1,0 +1,46 @@
+# browsers
+cask "arc"
+cask "firefox"
+
+# design
+cask "sketch"
+
+# development
+brew "bat"
+brew "dzfrias/formulae/projectable"
+brew "eza"
+brew "fish"
+brew "fzf"
+brew "gh"
+brew "helix"
+brew "lazygit"
+brew "oven-sh/bun/bun"
+brew "starship"
+brew "zellij"
+brew "zoxide"
+cask "alacritty"
+cask "dbngin"
+cask "handbrake"
+cask "herd"
+cask "imageoptim"
+cask "minisim"
+cask "polypane"
+cask "transmit"
+cask "visual-studio-code"
+cask "zed"
+
+# fonts
+tap "homebrew/cask-fonts"
+cask "font-jetbrains-mono-nerd-font"
+
+# others
+cask "ankama" # 🎮
+cask "discord"
+cask "setapp"
+cask "whatsapp" # 😩
+cask "signal"
+
+# productivity
+cask "heynote"
+cask "obsidian"
+cask "onlyoffice"
