@@ -11,7 +11,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Firefox](https://mozilla.org/firefox)
 - [HandBrake](https://handbrake.fr/)
 - [Heynote](https://heynote.com/)
-- [Notion](https://www.notion.so/)
+- [Obsidian](https://obsidian.md/)
 - [ONLYOFFICE](https://www.onlyoffice.com/)
 - [Polypane](https://polypane.app/)
 - [Signal](https://www.signal.org/)
