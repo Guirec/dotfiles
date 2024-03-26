@@ -57,3 +57,15 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 ### Linux
 
 - [Meld](https://meldmerge.org/)
+
+## Set up a new MacOS installation
+
+1. Install [Homebrew](https://brew.sh/)
+2. Install [chezmoi](https://github.com/twpayne/chezmoi) and [1Password](https://1password.com/) : `brew install chezmoi && brew install --cask 1password`
+3. [Set up 1password for SSH and Git](https://developer.1password.com/docs/ssh)
+4. Init chezmoi with this dotfiles repository: `chezmoi init git@github.com:Guirec/dotfiles.git`
+5. Apply dotfiles to the right places with chezmoi: `chezmoi apply`
+6. Install apps available with Homebrew: `brew bundle install`
+7. [Set fish as default shell](https://fishshell.com/docs/current/#default-shell)
+8. Install App Store and [Setapp](https://setapp.com/) apps
+9. Set MacOS settings and others applications with no dotfiles
