@@ -14,6 +14,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Notion](https://www.notion.so/)
 - [ONLYOFFICE](https://www.onlyoffice.com/)
 - [Polypane](https://polypane.app/)
+- [Signal](https://www.signal.org/)
 
 ### Command line
 
@@ -32,6 +33,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 
 ### MacOS
 
+- [BarTranslate](https://github.com/ThijmenDam/BarTranslate)
 - [CleanMyMac X](https://setapp.com/apps/cleanmymac)
 - [CleanShot X](https://setapp.com/apps/cleanshot)
 - [Dash](https://setapp.com/apps/dash)
@@ -39,14 +41,18 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Herd](https://herd.laravel.com/)
 - [ImageOptim](https://imageoptim.com/)
 - [Ivory](https://tapbots.com/ivory/)
+- [MindNode](https://setapp.com/apps/mindnode)
 - [MiniSim](https://www.minisim.app/)
 - [Numi](https://setapp.com/apps/numi)
 - [Paste](https://setapp.com/apps/paste)
+- [PDF Squeezer](https://setapp.com/apps/pdf-squeezer)
 - [PixelSnap](https://setapp.com/apps/pixelsnap)
 - [Sketch](https://www.sketch.com/)
+- [Slice](https://github.com/source-foundry/Slice)
 - [TablePlus](https://setapp.com/apps/tableplus)
 - [Transmit](https://www.panic.com/transmit/)
 - [Zed](https://zed.dev/)
+- [Ulysses](https://setapp.com/fr/apps/ulysses)
 
 ### Linux
 
