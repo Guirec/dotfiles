@@ -58,6 +58,10 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 
 - [Meld](https://meldmerge.org/)
 
+### Node packages
+
+- [@bramus/caniuse-cli](https://github.com/bramus/caniuse-cli)
+
 ## Set up a new MacOS installation
 
 1. Install [Homebrew](https://brew.sh/)
@@ -68,4 +72,5 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 6. Install apps available with Homebrew: `brew bundle install`
 7. [Set fish as default shell](https://fishshell.com/docs/current/#default-shell)
 8. Install App Store and [Setapp](https://setapp.com/) apps
-9. Set MacOS settings and others applications with no dotfiles
+9. Install Node packages globally: `bun install -g [package-name]`
+10. Set MacOS settings and others applications with no dotfiles
