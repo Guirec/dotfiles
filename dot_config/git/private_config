@@ -21,6 +21,9 @@
 [push]
     default = current
 
+[fetch]
+    prune = true
+
 [alias]
     # The basic aliases
     s = status
