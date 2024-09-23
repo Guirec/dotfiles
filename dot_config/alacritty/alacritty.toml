@@ -18,6 +18,8 @@ style = "Regular"
 [window]
 # Spread additional padding evenly around the terminal content.
 dynamic_padding = true
+# Title bar, transparent background and title bar buttons (macOS only).
+decorations = "Transparent"
 
 # Window dimensions in character columns and lines
 # (changes require restart)
@@ -29,5 +31,5 @@ lines = 48
 # Units are physical pixels; this is not DPI aware.
 # (change requires restart)
 [window.padding]
-x = 10
-y = 5
+x = 15
+y = 10
