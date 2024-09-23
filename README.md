@@ -8,6 +8,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 
 - [1Password](https://1password.com/)
 - [Alacritty](https://alacritty.org/)
+- [Cursor](https://www.cursor.com/)
 - [Firefox](https://mozilla.org/firefox)
 - [HandBrake](https://handbrake.fr/)
 - [Heynote](https://heynote.com/)
