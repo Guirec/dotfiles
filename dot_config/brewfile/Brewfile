@@ -7,7 +7,6 @@ cask "figma"
 
 # development
 brew "bat"
-brew "dzfrias/formulae/projectable"
 brew "eza"
 brew "fish"
 brew "fzf"

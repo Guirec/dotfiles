@@ -26,7 +26,6 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Helix](https://helix-editor.com/)
 - [Kirby CLI](https://github.com/getkirby/cli)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
-- [projectable](https://github.com/dzfrias/projectable)
 - [Starship](https://starship.rs/)
 - [Zellij](https://zellij.dev/)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
