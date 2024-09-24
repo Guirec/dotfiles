@@ -41,6 +41,5 @@ cask "whatsapp" # 😩
 cask "signal"
 
 # productivity
-cask "heynote"
 cask "obsidian"
 cask "onlyoffice"
