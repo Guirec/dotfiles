@@ -7,7 +7,6 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 ### Multiplatform
 
 - [1Password](https://1password.com)
-- [Alacritty](https://alacritty.org)
 - [Cursor](https://www.cursor.com)
 - [Figma](https://www.figma.com/fr-fr/downloads)
 - [Firefox](https://mozilla.org/firefox)
@@ -16,6 +15,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [ONLYOFFICE](https://www.onlyoffice.com)
 - [Polypane](https://polypane.app)
 - [Signal](https://www.signal.org)
+- [WezTerm](https://wezfurlong.org/wezterm)
 
 ### Command line
 
