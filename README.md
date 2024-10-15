@@ -14,7 +14,6 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Obsidian](https://obsidian.md)
 - [ONLYOFFICE](https://www.onlyoffice.com)
 - [Polypane](https://polypane.app)
-- [Signal](https://www.signal.org)
 - [WezTerm](https://wezfurlong.org/wezterm)
 
 ### Command line

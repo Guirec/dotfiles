@@ -37,7 +37,6 @@ cask "ankama" # 🎮
 cask "discord"
 cask "setapp"
 cask "whatsapp" # 😩
-cask "signal"
 
 # productivity
 cask "obsidian"
