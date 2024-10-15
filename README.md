@@ -20,6 +20,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 ### Command line
 
 - [bat](https://github.com/sharkdp/bat)
+- [Deno](https://deno.com/)
 - [eza](https://github.com/eza-community/eza)
 - [fish shell](https://fishshell.com)
 - [fzf](https://github.com/junegunn/fzf)
@@ -52,7 +53,7 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 - [Ulysses](https://setapp.com/fr/apps/ulysses)
 - [Zed](https://zed.dev)
 
-### Node packages
+### Node/Deno packages
 
 - [@bramus/caniuse-cli](https://github.com/bramus/caniuse-cli)
 
@@ -66,5 +67,5 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 6. Install apps available with Homebrew: `brew bundle install`
 7. [Set fish as default shell](https://fishshell.com/docs/current/#default-shell)
 8. Install App Store and [Setapp](https://setapp.com/) apps
-9. Install Node packages globally: `bun install -g [package-name]`
+9. Install Node/Deno packages globally: `deno install -g [package-name]`
 10. Set MacOS settings and others applications with no dotfiles

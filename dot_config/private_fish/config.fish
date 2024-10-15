@@ -17,7 +17,6 @@ alias ll="eza -l -g --icons --git"
 alias lla="eza -l -g -a --icons --git"
 alias llt="eza -1 --icons --tree --git-ignore"
 alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
-alias caniuse="bunx caniuse"
 
 # Abbreviations
 abbr lg 'lazygit'
