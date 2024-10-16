@@ -29,7 +29,6 @@ cask "wezterm"
 cask "zed"
 
 # fonts
-tap "homebrew/cask-fonts"
 cask "font-jetbrains-mono-nerd-font"
 
 # others
