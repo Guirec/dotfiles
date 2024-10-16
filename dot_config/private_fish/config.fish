@@ -30,6 +30,3 @@ zoxide init fish | source
 
 # Starship prompt
 starship init fish | source
-
-# Can I use CLI
-caniuse --completion-fish | source
