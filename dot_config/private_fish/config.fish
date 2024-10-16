@@ -20,6 +20,7 @@ alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:50
 
 # Abbreviations
 abbr lg 'lazygit'
+abbr p 'pnpm'
 
 # Source
 # source ~/.config/fish/themes/catppuccin_mocha.theme
