@@ -1,10 +1,11 @@
 [core]
     excludesfile = ~/.config/git/ignore
 
-[user]
-    name = Guirec Lefort
-    email = bonjour@guirec.dev
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDsSwU3VUwkhHOKnnQONmjhvr3wM1isJrBzpLwbO/HQg
+[include]
+    path = ~/.config/git/user-perso.conf
+
+[includeIf "gitdir:~/Projets/MGDIS/"]
+    path = ~/.config/git/user-mgdis.conf
 
 [gpg]
     format = ssh
