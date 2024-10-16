@@ -57,6 +57,26 @@ config.keys = {
 		mods = 'CTRL|SHIFT',
 		action = act.ActivatePaneDirection 'Down',
 	},
+	{
+		key = 'H',
+		mods = 'CTRL|SHIFT',
+		action = act.AdjustPaneSize { 'Left', 5 },
+	},
+	{
+		key = 'J',
+		mods = 'CTRL|SHIFT',
+		action = act.AdjustPaneSize { 'Down', 5 },
+	},
+	{
+		key = 'K',
+		mods = 'CTRL|SHIFT',
+		action = act.AdjustPaneSize { 'Up', 5 },
+	},
+	{
+		key = 'L',
+		mods = 'CTRL|SHIFT',
+		action = act.AdjustPaneSize { 'Right', 5 },
+	},
 }
 
 -- and finally, return the configuration to wezterm
