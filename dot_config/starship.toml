@@ -16,8 +16,6 @@ $git_metrics\
 $git_status\
 $hg_branch\
 $pijul_channel\
-$docker_context\
-$package\
 $env_var\
 $custom\
 $sudo\
@@ -27,7 +25,7 @@ $jobs\
 $battery\
 $time\
 $status\
-$os\
-$container\
 $shell\
 $character"""
+
+command_timeout = 1000
