@@ -60,6 +60,6 @@ This repository contains all my dotfiles, managed by [chezmoi](https://github.co
 4. Init chezmoi with this dotfiles repository: `chezmoi init git@github.com:Guirec/dotfiles.git`
 5. Apply dotfiles to the right places with chezmoi: `chezmoi apply`
 6. Install apps available with Homebrew: `brew bundle install`
-7. [Set fish as default shell](https://fishshell.com/docs/current/#default-shell)
+7. [Set fish as default shell](https://fishshell.com/docs/current/#default-shell) with homebrew path: `/opt/homebrew/bin/fish`
 8. Install App Store and [Setapp](https://setapp.com/) apps
 10. Set MacOS settings and others applications with no dotfiles
