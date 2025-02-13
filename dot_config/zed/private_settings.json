@@ -7,17 +7,24 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+	"base_keymap": "VSCode",
 	"assistant": {
 		"default_model": {
 			"provider": "zed.dev",
-			"model": "claude-3-5-sonnet-20240620"
+			"model": "claude-3-5-sonnet-latest"
 		},
 		"version": "2"
 	},
+	"features": {
+		"inline_completion_provider": "supermaven"
+	},
 	"theme": "Catppuccin Mocha",
-	"buffer_font_size": 14,
+	"buffer_font_size": 13,
 	"terminal": {
 		"font_size": 13
+	},
+	"project_panel": {
+		"dock": "right"
 	},
 	"hard_tabs": true,
 	"tab_size": 4,
