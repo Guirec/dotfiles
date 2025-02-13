@@ -1,0 +1,8 @@
+theme = catppuccin-mocha
+fullscreen
+title = " "
+window-padding-x = 10
+window-colorspace = display-p3
+clipboard-trim-trailing-spaces
+macos-titlebar-proxy-icon = hidden
+keybind = global:cmd+grave_accent=toggle_quick_terminal
