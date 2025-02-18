@@ -16,7 +16,7 @@
 		"version": "2"
 	},
 	"features": {
-		"inline_completion_provider": "supermaven"
+		"edit_prediction_provider": "zed"
 	},
 	"theme": "Catppuccin Mocha",
 	"buffer_font_size": 13,
