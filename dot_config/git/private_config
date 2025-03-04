@@ -19,11 +19,48 @@
 [init]
     defaultBranch = main
 
+[column]
+    ui = auto
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
+[pull]
+    rebase = true
+
 [push]
-    default = current
+    default = simple
+    autoSetupRemote = true
+    followTags = true
 
 [fetch]
     prune = true
+    pruneTags = true
+    all = true
+
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+
+[help]
+    autocorrect = prompt
+
+[commit]
+    verbose = true
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
 
 [alias]
     # The basic aliases
@@ -34,7 +71,7 @@
     # Branch related aliases
     br = branch
     co = checkout
-    com = checkout master
+    com = checkout main
     cod = checkout develop
 
     # Syncing related aliases
@@ -42,7 +79,7 @@
     prune = fetch --prune
 
     # Push related aliases
-    pom = push origin master
+    pom = push origin main
     pod = push origin develop
     force = push --force-with-lease
 
@@ -73,3 +110,9 @@
     # Clean
     rpo = remote prune origin
     cleanlocal = !git branch --merged | egrep -v \"(^\\*|master|main|dev)\" | xargs git branch -d
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
